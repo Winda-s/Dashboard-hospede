@@ -10,6 +10,12 @@
   --azul-marinho: #001d6c;
   --cinza-basico: #dde1e6;
   --cinza-subtitulo: #21272a;
+
+  /* ALERTAS */
+  --alerta-azul:rgb(0, 110, 255);
+  --alerta-verde: #168821;
+  --alerta-amarelo: #ffcd07;
+  --alerta-vermelho: #e52207; 
 }
 
 * {
@@ -112,7 +118,7 @@ a:hover {
   width: 90%;
   height: 90%;
 
-  /* background-color: rgb(255, 248, 47); */
+  background-color: var(--alerta-amarelo);
 }
 
 .container_umidade {
@@ -120,13 +126,15 @@ a:hover {
   width: 90%;
   height: 90%;
 
-  /* background-color: rgb(233, 66, 66); */
+  background-color: var(--alerta-vermelho);
 }
 
 .container_proximidade {
   grid-area: 2 / 3 / 3 / 4;
   width: 90%;
   height: 90%;
+
+  background-color: var(--alerta-azul);
 }
 
 .container_alerta {
@@ -167,3 +175,5 @@ a:hover {
   font-weight: 700;
 
 }
+
+
